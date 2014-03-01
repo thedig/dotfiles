@@ -26,6 +26,7 @@ alias pull="git pull origin master"
 alias push="git push origin master"
 alias go="git checkout"
 
+alias rmrf="rm -rf"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
