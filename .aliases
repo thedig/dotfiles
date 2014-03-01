@@ -21,9 +21,11 @@ alias resource="source ~/.bash_profile"
 alias ga="git add"
 alias gc="git commit"
 alias gs="git status"
+alias gd="git diff"
 alias pull="git pull origin master"
 alias push="git push origin master"
 alias gl="git l"
+alias go="git checkout"
 
 
 # Detect which `ls` flavor is in use

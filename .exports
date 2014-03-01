@@ -27,3 +27,8 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/share/python:$PATH
 export PYTHONPATH=/usr/local/lib/python:$PYTHONPATH
+
+export WP_PROJECT_TYPE='site'
+export WP_PROJECT_NAME='vungle-site'
+export WP_IP='33.33.33.30'
+export WP_HOSTNAME='local.vungle.monsoon.com'
