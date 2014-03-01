@@ -14,7 +14,16 @@ alias p="cd ~/projects"
 alias g="git"
 alias h="history"
 alias j="jobs"
-alias profile="s ~/.bash_profile"
+alias profile="s ~/dotfiles/.bash_profile"
+alias aliases="s ~/dotfiles/.aliases"
+alias resource="source ~/.bash_profile"
+
+alias ga="git add"
+alias gc="git commit"
+alias gs="git status"
+alias pull="git pull origin master"
+alias push="git push origin master"
+
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
