@@ -23,6 +23,8 @@ alias pull="git pull origin master"
 alias push="git push origin master"
 alias go="git checkout"
 alias gs="git status"
+alias gc="git commit"
+alias gd="g d"
 
 alias rmrf="rm -rf"
 
