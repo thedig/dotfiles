@@ -16,15 +16,13 @@ alias h="history"
 alias j="jobs"
 alias profile="s ~/dotfiles/.bash_profile"
 alias aliases="s ~/dotfiles/.aliases"
-alias resource="source ~/.bash_profile"
+alias resource="source ~/dotfiles/.bash_profile"
 
 alias ga="git add"
-# alias gc="git commit"
-# alias gs="git status"
-# alias gd="git diff"
 alias pull="git pull origin master"
 alias push="git push origin master"
 alias go="git checkout"
+alias gs="git status"
 
 alias rmrf="rm -rf"
 
