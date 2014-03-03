@@ -4,24 +4,26 @@
 
 ### How to use this repo
 
-Fork and then clone this repository.
+Fork and clone this repository.
 
 ```
 cd dotfiles
 ```
 
-Open up `makesymlinks.sh` in your text editor, and add the names of all dotfiles you want to track in the `files` variable. 
-Edit/replace the files in this repo to match your own pre-existing dotfiles. 
-
-The `makesymlinks.sh` script will then back up all of your dotfiles into a directory called `old_dotfiles`, and create symlinks in your home directory pointing to the dotfiles in this repo:
+* Open up `makesymlinks.sh` in your text editor, and add the names of all dotfiles you want to track in the `files` variable. 
+* Edit/replace the files in this repo to match your own pre-existing dotfiles. 
+* The `makesymlinks.sh` script will then back up all of your dotfiles into a directory called `old_dotfiles`, and create symlinks in your home directory pointing to the dotfiles in this repo:
 
 ```
 ./makesymlinks.sh
 ```
 
-Use Git as you normally would to source control these files.
+You can now use Git to track these files.
 
 **Note:** The global gitconfig file is in it's own directory so as not to conflict with the gitconfig file for this particular repository. Make sure you change the user settings in this file to match your own!
+
+### This profile installs `z`
+A command line directory jumper, [more info here](https://github.com/rupa/z).
 
 ### Specify the `$PATH`
 
@@ -38,6 +40,8 @@ export PATH="$HOME/utils:$PATH"
 If `~/.extra` exists, it will be sourced along with the other files. You can use this to add a few custom commands without the need to fork this entire repository, or to add commands you don’t want to commit to a public repository.
 
 You could also use `~/.extra` to override settings, functions and aliases from my dotfiles repository. It’s probably better to [fork this repository](https://github.com/mathiasbynens/dotfiles/fork) instead, though.
+
+[Read this for more info](https://github.com/rupa/z)
 
 -----
 ## Setting up a new Mac:
