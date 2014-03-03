@@ -2,35 +2,26 @@
 
 ## Installation
 
-### Using Git and the bootstrap script
+### How to use this repo
 
-You can clone the repository wherever you want. (I like to keep it in `~/Projects/dotfiles`, with `~/dotfiles` as a symlink.) The bootstrapper script will pull in the latest version and copy the files to your home folder.
+Fork and then clone this repository.
 
-```bash
-git clone https://github.com/mathiasbynens/dotfiles.git && cd dotfiles && source bootstrap.sh
+```
+cd dotfiles
 ```
 
-To update, `cd` into your local `dotfiles` repository and then:
+Open up `makesymlinks.sh` in your text editor, and add the names of all dotfiles you want to track in the `files` variable. 
+Edit/replace the files in this repo to match your own pre-existing dotfiles. 
 
-```bash
-source bootstrap.sh
+The `makesymlinks.sh` script will then back up all of your dotfiles into a directory called `old_dotfiles`, and create symlinks in your home directory pointing to the dotfiles in this repo:
+
+```
+./makesymlinks.sh
 ```
 
-Alternatively, to update while avoiding the confirmation prompt:
+Use Git as you normally would to source control these files.
 
-```bash
-set -- -f; source bootstrap.sh
-```
-
-### Git-free install
-
-To install these dotfiles without Git:
-
-```bash
-cd; curl -#L https://github.com/mathiasbynens/dotfiles/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,bootstrap.sh,LICENSE-MIT.txt}
-```
-
-To update later on, just run that command again.
+**Note:** The global gitconfig file is in it's own directory so as not to conflict with the gitconfig file for this particular repository. Make sure you change the user settings in this file to match your own!
 
 ### Specify the `$PATH`
 
@@ -46,24 +37,17 @@ export PATH="$HOME/utils:$PATH"
 
 If `~/.extra` exists, it will be sourced along with the other files. You can use this to add a few custom commands without the need to fork this entire repository, or to add commands you don’t want to commit to a public repository.
 
-My `~/.extra` looks something like this:
-
-```bash
-# Git credentials
-# Not in the repository, to prevent people from accidentally committing under my name
-GIT_AUTHOR_NAME="Mathias Bynens"
-GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
-git config --global user.name "$GIT_AUTHOR_NAME"
-GIT_AUTHOR_EMAIL="mathias@mailinator.com"
-GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
-git config --global user.email "$GIT_AUTHOR_EMAIL"
-```
-
 You could also use `~/.extra` to override settings, functions and aliases from my dotfiles repository. It’s probably better to [fork this repository](https://github.com/mathiasbynens/dotfiles/fork) instead, though.
+
+-----
+## Setting up a new Mac:
+Use these dotfiles to set up a fresh environment.
 
 ### Sensible OS X defaults
 
 When setting up a new Mac, you may want to set some sensible OS X defaults:
+
+*Warning: this will make a lot of changes to your environment. It's a good idea to customize this file to your liking.*
 
 ```bash
 ./.osx
@@ -89,6 +73,7 @@ You could also install native apps with [`brew cask`](https://github.com/phinze/
 ## Thanks to…
 
 * [Mathias Bynens' dotfiles](https://github.com/mathiasbynens/dotfiles)
+* [Michael Smalley](http://blog.smalleycreative.com/tutorials/using-git-and-github-to-manage-your-dotfiles/)
 * @ptb and [his _OS X Lion Setup_ repository](https://github.com/ptb/Mac-OS-X-Lion-Setup)
 * [Ben Alman](http://benalman.com/) and his [dotfiles repository](https://github.com/cowboy/dotfiles)
 * [Chris Gerke](http://www.randomsquared.com/) and his [tutorial on creating an OS X SOE master image](http://chris-gerke.blogspot.com/2012/04/mac-osx-soe-master-image-day-7.html) + [_Insta_ repository](https://github.com/cgerke/Insta)
@@ -101,5 +86,3 @@ You could also install native apps with [`brew cask`](https://github.com/phinze/
 * [Sindre Sorhus](http://sindresorhus.com/)
 * [Tom Ryder](http://blog.sanctum.geek.nz/) and his [dotfiles repository](https://github.com/tejr/dotfiles)
 * [Kevin Suttle](http://kevinsuttle.com/) and his [dotfiles repository](https://github.com/kevinSuttle/dotfiles) and [OSXDefaults project](https://github.com/kevinSuttle/OSXDefaults), which aims to provide better documentation for [`~/.osx`](http://mths.be/osx)
-
-* anyone who [contributed a patch](https://github.com/mathiasbynens/dotfiles/contributors) or [made a helpful suggestion](https://github.com/mathiasbynens/dotfiles/issues)

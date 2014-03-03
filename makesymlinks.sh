@@ -1,18 +1,24 @@
 #!/bin/bash
 ############################
-# .make.sh
+# makesymlinks.sh
 # This script creates symlinks from the home directory to any desired dotfiles in ~/dotfiles
-# taken from http://blog.smalleycreative.com/tutorials/using-git-and-github-to-manage-your-dotfiles/
 ############################
 
 ########## Variables
 
 # dotfiles directory
-dir=~/dotfiles                    
+dir=~/dotfiles        
+# old dotfiles backup directory            
+olddir=~/old_dotfiles             
 # list of files/folders to symlink in homedir
-files="bashrc bash_profile path bash_prompt exports aliases functions extra inputrc gitconfig"    
+files="bashrc bash_profile path bash_prompt exports aliases functions extra inputrc gitignore"    
 
 ##########
+
+# create dotfiles_old in homedir
+echo "Creating $olddir for backup of any existing dotfiles in ~"
+mkdir -p $olddir
+echo "...done"
 
 # change to the dotfiles directory
 echo -n "Changing to the $dir directory ..."
@@ -21,12 +27,14 @@ echo "done"
 
 # create symlinks from the homedir to any files in the ~/dotfiles directory specified in $files
 for file in $files; do
+    echo "Moving any existing dotfiles from ~ to $olddir"
+    mv ~/.$file ~/old_dotfiles/
     echo "Creating symlink to $file in home directory."
     ln -s $dir/.$file ~/.$file
 done
 
 # gitconfig file is in its own directory so as not to conflict with gitconfig for this particular repo
-ln -s $dir/git-dotfiles/ ~/.gitconfig
+ln -s $dir/git-dotfiles/.gitconfig ~/.gitconfig
 
 # install_zsh () {
 # # Test to see if zshell is installed.  If it is:
