@@ -22,6 +22,8 @@ You can now use Git to track these files.
 
 **Note:** The global gitconfig file is in it's own directory so as not to conflict with the gitconfig file for this particular repository. Make sure you change the user settings in this file to match your own!
 
+## Further details
+
 ### This profile installs `z`
 A command line directory jumper, [more info here](https://github.com/rupa/z).
 

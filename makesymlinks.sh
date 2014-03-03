@@ -23,7 +23,7 @@ echo "...done"
 # change to the dotfiles directory
 echo -n "Changing to the $dir directory ..."
 cd $dir
-echo "done"
+echo "...done"
 
 # create symlinks from the homedir to any files in the ~/dotfiles directory specified in $files
 for file in $files; do
