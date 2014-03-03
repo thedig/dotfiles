@@ -43,8 +43,6 @@ If `~/.extra` exists, it will be sourced along with the other files. You can use
 
 You could also use `~/.extra` to override settings, functions and aliases from my dotfiles repository. It’s probably better to [fork this repository](https://github.com/mathiasbynens/dotfiles/fork) instead, though.
 
-[Read this for more info](https://github.com/rupa/z)
-
 -----
 ## Setting up a new Mac:
 Use these dotfiles to set up a fresh environment.
