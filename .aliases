@@ -7,15 +7,15 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # Shortcuts
-alias d="cd ~/Documents/Dropbox"
+alias dx="cd ~/Documents/Dropbox"
 alias dl="cd ~/Downloads"
-alias dt="cd ~/Desktop"
-alias p="cd ~/projects"
-alias g="git"
-alias h="history"
-alias j="jobs"
+alias pj="cd ~/projects"
+
+alias hx="history"
+
 alias profile="s ~/dotfiles/.bash_profile"
 alias aliases="s ~/dotfiles/.aliases"
+
 alias resource="source ~/dotfiles/.bash_profile"
 
 alias ga="git add"
@@ -24,8 +24,11 @@ alias push="git push origin master"
 alias go="git checkout"
 alias gs="git status"
 alias gc="git commit"
-alias gd="g d"
+alias gd="git d"
+alias gl="git l"
+alias gl="git l"
 
+alias sd="subl ./"
 alias rmrf="rm -rf"
 
 # Detect which `ls` flavor is in use
