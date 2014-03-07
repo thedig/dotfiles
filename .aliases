@@ -4,7 +4,7 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
-# alias -- -="cd -"
+# alias -="cd -"
 
 # Shortcuts
 alias dx="cd ~/Documents/Dropbox"
@@ -22,7 +22,7 @@ alias alss="s ~/dotfiles/.aliases"
 # refresh shell
 alias rsrc="source ~/dotfiles/.bash_profile"
 
-alias zz="cd ~/dotfiles; git add .; git commit -m \"autosave.\"; --"
+alias zz="cd ~/dotfiles; git add .; git commit -m \"autosave.\";"
 
 alias ga="git add"
 alias pull="git pull origin master"
