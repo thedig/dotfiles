@@ -13,10 +13,16 @@ alias pj="cd ~/projects"
 
 alias hx="history"
 
-alias profile="s ~/dotfiles/.bash_profile"
-alias aliases="s ~/dotfiles/.aliases"
+# open .bash_profile in sublime
+alias prof="s ~/dotfiles/.bash_profile"
 
-alias resource="source ~/dotfiles/.bash_profile"
+# open .aliases in sublime
+alias alss="s ~/dotfiles/.aliases"
+
+# refresh shell
+alias rsrc="source ~/dotfiles/.bash_profile"
+
+alias zz="cd ~/dotfiles; git add .; git commit -m \"autosave.\"; --"
 
 alias ga="git add"
 alias pull="git pull origin master"
@@ -27,10 +33,11 @@ alias gc="git commit"
 alias gm="git commit -m"
 alias gd="git d"
 alias gl="git l"
-alias gl="git l"
 
 alias sd="subl ./"
 alias rmrf="rm -rf"
+
+
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -41,11 +48,11 @@ fi
 
 # List all files colorized in long format
 alias l="ls -lF ${colorflag}"
-
-alias ll="ls -a ${colorflag}"
-
 # List all files colorized in long format, including dot files
-alias la="ls -laF ${colorflag}"
+alias ll="ls -laF ${colorflag}"
+
+alias lll="ls -a ${colorflag}"
+
 
 # List only directories
 alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
