@@ -22,7 +22,7 @@ alias alss="s ~/dotfiles/.aliases"
 # refresh shell
 alias rsrc="source ~/dotfiles/.bash_profile"
 
-alias zz="cd ~/dotfiles; git add .; git commit -m \"autosave.\";"
+alias zz="cd ~/dotfiles; git add .; git commit -m \"autosave.\"; cd -"
 
 alias ga="git add"
 alias pull="git pull origin master"
