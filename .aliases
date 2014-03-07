@@ -17,7 +17,7 @@ alias hx="history"
 alias prof="s ~/dotfiles/.bash_profile"
 
 # open .aliases in sublime
-alias alss="s ~/dotfiles/.aliases"
+alias als="s ~/dotfiles/.aliases"
 
 # refresh shell
 alias rsrc="source ~/dotfiles/.bash_profile"
