@@ -26,8 +26,8 @@ alias zz="cd ~/dotfiles; pwd; git add .; git commit -m \"autosave.\"; cd -"
 alias zzz="cd ~/dotfiles; pwd; git add .; git commit -m \"autosave.\"; git push origin master; cd -"
 
 alias ga="git add"
-alias pull="git pull origin master"
-alias push="git push origin master"
+# alias pull="git pull"
+# alias push="git push"
 alias go="git checkout"
 alias gs="git status"
 alias gc="git commit"
@@ -39,6 +39,7 @@ alias wip="ga .; gc -m \"wip\" "
 alias sd="subl ./"
 alias rmrf="rm -rf"
 
+alias animal="rake db:drop:all db:create:all db:migrate db:seed db:test:clone"
 
 
 # Detect which `ls` flavor is in use

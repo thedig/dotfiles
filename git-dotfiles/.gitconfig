@@ -96,3 +96,5 @@
 [credential]
 	helper = osxkeychain
 
+[heroku]
+	account = work
