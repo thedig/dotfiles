@@ -1,8 +1,10 @@
-# z's dotfiles source control
+# source control for your dotfiles
 
 ## Installation
 
 ### How to use this repo
+
+_note: the files here are heavily customized, use with caution_
 
 Fork and clone this repository.
 
