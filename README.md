@@ -1,4 +1,4 @@
-# Zach's dotfiles
+# z's dotfiles source control
 
 ## Installation
 
@@ -10,8 +10,8 @@ Fork and clone this repository.
 cd dotfiles
 ```
 
-* Open up `makesymlinks.sh` in your text editor, and add the names of all dotfiles you want to track in the `files` variable. 
-* Edit/replace the files in this repo to match your own pre-existing dotfiles. 
+* Open up `makesymlinks.sh` in your text editor, and add the names of all dotfiles you want to track in the `files` variable.
+* Edit/replace the files in this repo to match your own pre-existing dotfiles.
 * The `makesymlinks.sh` script will then back up all of your dotfiles into a directory called `old_dotfiles`, and create symlinks in your home directory pointing to the dotfiles in this repo:
 
 ```
