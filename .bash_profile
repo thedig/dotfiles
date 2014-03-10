@@ -50,3 +50,4 @@ if [ -f ~/dotfiles/.git-completion.bash ]; then
 fi
 
 __git_complete go _git_checkout
+__git_complete gb _git_branch
