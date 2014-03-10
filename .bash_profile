@@ -48,3 +48,5 @@ eval "$(rbenv init -)"
 if [ -f ~/dotfiles/.git-completion.bash ]; then
   . ~/dotfiles/.git-completion.bash
 fi
+
+__git_complete go _git_checkout
