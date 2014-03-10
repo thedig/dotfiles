@@ -19,17 +19,12 @@ alias prof="atom ~/dotfiles/.bash_profile"
 # open .aliases in sublime
 alias als="atom ~/dotfiles/.aliases"
 
-# refresh shell
-alias rsrc="source ~/dotfiles/.bash_profile"
-
 alias zz="cd ~/dotfiles; pwd; git add .; git commit -m \"autosave.\"; cd -"
 alias zzz="cd ~/dotfiles; pwd; git add .; git commit -m \"autosave.\"; git push origin master; cd -"
-
 alias ga="git add"
 alias gb="git branch"
-# alias pull="git pull"
-# alias push="git push"
-alias go="git checkout"
+alias pull="git pull"
+alias push="git push"
 alias gs="git status"
 alias gc="git commit"
 alias gm="git commit -m"
