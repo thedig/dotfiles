@@ -14,10 +14,10 @@ alias pj="cd ~/projects"
 alias hx="history"
 
 # open .bash_profile in sublime
-alias prof="s ~/dotfiles/.bash_profile"
+alias prof="atom ~/dotfiles/.bash_profile"
 
 # open .aliases in sublime
-alias als="s ~/dotfiles/.aliases"
+alias als="atom ~/dotfiles/.aliases"
 
 # refresh shell
 alias rsrc="source ~/dotfiles/.bash_profile"
