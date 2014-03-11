@@ -14,10 +14,10 @@ alias pj="cd ~/projects"
 alias hx="history"
 
 # open .bash_profile in sublime
-alias prof="atom ~/dotfiles/.bash_profile"
+alias prof="subl ~/dotfiles/.bash_profile"
 
 # open .aliases in sublime
-alias als="atom ~/dotfiles/.aliases"
+alias als="subl ~/dotfiles/.aliases"
 
 alias zz="cd ~/dotfiles; pwd; git add .; git commit -m \"autosave.\"; cd -"
 alias zzz="cd ~/dotfiles; pwd; git add .; git commit -m \"autosave.\"; git push origin master; cd -"
