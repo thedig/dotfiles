@@ -33,6 +33,8 @@ alias gd="git d"
 alias gl="git l"
 alias wip="ga .; gc -m \"wip\" "
 
+alias beetsimp="beet import /Volumes/berry\ preserves/unorganized-music/chunks/"
+
 alias sd="subl ./"
 alias rmrf="rm -rf"
 
